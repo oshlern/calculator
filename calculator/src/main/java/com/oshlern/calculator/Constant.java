@@ -1,8 +1,7 @@
 package com.oshlern.calculator;
 
-class Constant extends Term {
-
-    public double value;
+class Constant extends Function {
+    public final double value;
 
     public Constant(double value) {
         this.value = value;
@@ -12,7 +11,7 @@ class Constant extends Term {
         return value;
     }
 
-    public Term derivative() {
+    public Function derivative() {
         return new Constant(0);
     }
 }

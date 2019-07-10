@@ -1,23 +1,8 @@
 package com.oshlern.calculator;
 
 
-public abstract class Function extends Term {
+public abstract class Function {
 
-    protected final Function[] inputs;
-
-    public Function() {
-        inputs = new Function[3];
-    }
-    public Function(Function[] inputs) {
-        this.inputs = inputs;
-    }
-
-    abstract public double compute(double x);
-
-    // public double eval(double x) {
-    //     inputs.compute(x);
-    // }
-
-    public abstract Function derivative();
-
+    abstract public double eval(double x);
+    abstract public Function derivative();
 }
