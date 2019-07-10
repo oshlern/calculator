@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TestCalc",
+            "request": "launch",
+            "mainClass": "com.oshlern.calculator.App",
+            "projectName": "calculator"
+        }
+    ]
+}
