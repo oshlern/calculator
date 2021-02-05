@@ -5,17 +5,17 @@ public abstract class SingleInputFunction extends Function {
     protected final Function input;
 
     public SingleInputFunction(Function input) {
-        this.input = inputs;
+        this.input = input;
     }
 
-    abstract protected double eval(double x);
-    abstract protected Function derivative();
+    abstract protected double _eval(double x);
+    abstract protected Function _derivative();
 
     public double eval(double x) {
-        return eval(input.eval(x));
+        return _eval(input.eval(x));
     }
 
     public Function derivative() {
-        return new Multiply(derivative(), input.derivative());
+        return new Multiply(_derivative(), input.derivative());
     }
 }

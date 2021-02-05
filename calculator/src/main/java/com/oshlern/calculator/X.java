@@ -1,6 +1,8 @@
 package com.oshlern.calculator;
 
-class Input extends Function {
+class X extends Function {
+
+    public X() {}
 
     public double eval(double x) {
         return x;

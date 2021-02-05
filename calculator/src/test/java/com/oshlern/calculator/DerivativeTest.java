@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class EvalTest 
+public class DerivativeTest 
 {
     double epsilon = 0.000001;
 
@@ -18,8 +18,8 @@ public class EvalTest
     public void add() { 
         double a = 0.;
         double b = 1.;
-        Add adder = new Add(new Constant(a), new Constant(b));
-        assertEquals(adder.eval(0), a+b, epsilon);
+        // Add adder = new Add(, new Constant(b));
+        // assertEquals(adder.eval(0), a+b, epsilon);
 
         double c = -2.52;
         Add adder_var = new Add(new X(), new Constant(c));
